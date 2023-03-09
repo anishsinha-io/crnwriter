@@ -1,0 +1,56 @@
+{
+  "system": {
+    "equations": [
+      {
+        "lhs": "x",
+        "rhs": "sigma * (y-x)"
+      },
+      {
+        "lhs": "y",
+        "rhs": "x * (rho - z) - y"
+      },
+      {
+        "lhs": "z",
+        "rhs": "x * y - beta * z"
+      }
+    ],
+    "init": [
+      {
+        "symbol": "x",
+        "value": 5
+      },
+      {
+        "symbol": "y",
+        "value": 8
+      },
+      {
+        "symbol": "z",
+        "value": 14
+      }
+    ],
+    "params": [
+      {
+        "symbol": "beta",
+        "value": {
+          "type": "quotient",
+          "divisor": 8,
+          "dividend": 3
+        }
+      },
+      {
+        "symbol": "rho",
+        "value": {
+          "type": "literal",
+          "literal": 28.0
+        }
+      },
+      {
+        "symbol": "sigma",
+        "value": {
+          "type": "literal",
+          "literal": 10.0
+        }
+      }
+    ]
+  }
+}
